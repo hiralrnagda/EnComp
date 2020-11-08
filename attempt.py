@@ -48,6 +48,7 @@ def ECC_tester():
     
     
     doutput_file = open("DecryptedFiles/" + filename.split(".")[0] + ".txt", "w")
+    doutput_file.write("%s" %dataD)
     doutput_file.close()
     
     decrypted_size = os.path.getsize("DecryptedFiles/" + filename.split(".")[0] + ".txt")
