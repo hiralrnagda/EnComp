@@ -4,6 +4,7 @@ import random
 import time
 import ECC
 import huffman as huffman
+import io
 
 def ECC_tester():
     filename = "f1.txt"
@@ -47,8 +48,8 @@ def ECC_tester():
     dataD = ecc.decryption(C1, C2, privKey)
     
     
-    doutput_file = open("DecryptedFiles/" + filename.split(".")[0] + ".txt", "w")
-    doutput_file.write("%s" %dataD)
+    doutput_file = open("DecryptedFiles/" + filename.split(".")[0] + ".txt", "w", encoding="utf-8")
+    doutput_file.write("%s" % dataD)
     doutput_file.close()
     
     decrypted_size = os.path.getsize("DecryptedFiles/" + filename.split(".")[0] + ".txt")
