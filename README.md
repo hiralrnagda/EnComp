@@ -4,6 +4,7 @@
   * Canonical Huffman Encoding compression algorithm
   
 The general flow of the algorithm
+
 __Sender side__
   * Original Textfile ---> ECC Encryption ---> Cannonical Huffman Encoding compression
   
